@@ -1,6 +1,6 @@
 # Vue-Table-Component
 一个基于element-ui（el-table）的vue（table）组件。
-把你的表格数据、表头信息等参数传递给组件，即可生成你需要的表格。支持列排序（服务端）、对比同一列（仅支持'>'、'>'、'==='）数据可自定义样式、对每一行进行操作等功能。
+把你的表格数据、表头信息等参数传递给组件，即可生成你需要的表格。支持列排序（服务端）、对比同一列（仅支持'>'、'<'、'==='）数据可自定义样式、对每一行进行操作等功能。
 
 ## preview
 ![效果图片](http://m.qpic.cn/psb?/V13PFRwW2vD5Np/MjDQQlg9bpwNKIYCk7PDx0fQja1CkAPjWfhEdGSJAsg!/b/dC8BAAAAAAAA&bo=5QRTAwAAAAADB5M!&rf=viewer_4&t=5)
