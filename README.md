@@ -7,21 +7,23 @@
 
 ## options
 ######html
-	<eg-table
-        :tableData="tables.tableData"
-        :options="tables.options"
-        :page="tables.page"
-        :feedback="tables.feedback"
-        @handle="tables.handle"
-        @handlePage="tables.handlePage"
-        @handleSort="tables.handleSort"
-    />
+```html
+<eg-table
+    :tableData="tables.tableData"
+    :options="tables.options"
+    :page="tables.page"
+    :feedback="tables.feedback"
+    @handle="tables.handle"
+    @handlePage="tables.handlePage"
+    @handleSort="tables.handleSort"
+/>
+```
 ######js
 ```javascript
 data(){
     return{
         tables: {
-			/*
+            /*
             *   表格配置【options】：接受一个<<对象数组>>
             *   字段说明：
             *   【hide】 => Boolean（非必填）=> default: false，为<true>时该列隐藏
