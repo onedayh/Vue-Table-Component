@@ -79,12 +79,12 @@
                     {year: '2010', name: 'Kyrie Irving', rank: 1, age: 36},
                     {year: '2003', name: 'Dwyane Wade', rank: 5, age: 26}
                 ],
-                page:{
+                page:{		
                     cur: 1,		// 当前页
                     size: 20,	// 每页数量
                     total: 18	// 总数
                 },
-                feedback: '',	//
+                feedback: '',	// 
                 handle: (row, type) => {	// 操作
                     console.log(row.name, type)
                 },
