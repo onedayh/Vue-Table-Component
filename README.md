@@ -6,7 +6,7 @@
 ![效果图片](http://m.qpic.cn/psb?/V13PFRwW2vD5Np/MjDQQlg9bpwNKIYCk7PDx0fQja1CkAPjWfhEdGSJAsg!/b/dC8BAAAAAAAA&bo=5QRTAwAAAAADB5M!&rf=viewer_4&t=5)
 
 ## options
-######html
+####html
 ```html
 <eg-table
     :tableData="tables.tableData"
@@ -18,7 +18,7 @@
     @handleSort="tables.handleSort"
 />
 ```
-######js
+####js
 ```javascript
 data(){
     return{
