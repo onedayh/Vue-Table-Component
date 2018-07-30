@@ -32,35 +32,37 @@ data(){
             *   【render】 => Array（非必填） => 根据单元格内容给出对应的类名
             *              接受一个<<对象数组>>
             *              字段说明：
-            *             【myTarget】 => String/Number（必填） => 比较的对象
-            *             【myClass】 => String（必填） => 满足条件时的类名
-            *             【mode】 => String（非必填） => 比较方法:
-            *                                           'more' => 大于【myTarget】的值
-            *                                           'less' => 小于【myTarget】的值
-            *                                           不填【mode】 => 等于【myTarget】的值
+            *                   【myTarget】 => String/Number（必填） => 比较的对象
+            *                   【myClass】 => String（必填） => 满足条件时的类名
+            *                   【mode】 => String（非必填） => 比较方法:
+            *                                                       'more' => 大于【myTarget】的值
+            *                                                       'less' => 小于【myTarget】的值
+            *                                                       不填【mode】 => 等于【myTarget】的值
             *   【slot】 => Array（非必填） => 对应单元格的操作
             *              接受一个<<对象数组>>
             *              字段说明：
-            *              【type】 => String（必填） => 操作类型
-            *              【name】 => String（必填） => 名字
+            *                   【type】 => String（必填） => 操作类型
+            *                   【name】 => String（必填） => 名字
             *   【sort】 => String => 排序 custom
-            *   【center】 => Boolean => default: false => 为<true>时该列居中对齐, 默认局左对齐
+            *   【center】 => Boolean => default: false => 为<true>时该列居中对齐, 默认局左对齐, slot列默居中对齐
             *   【overflow】 => Boolean => default: false => 为<true>时内容溢出隐藏
             */
             options: [
                 {prop: 'year', label: '日期'},
                 {prop: 'name', label: '姓名', overflow: true},
-                {prop: 'rank', label: '顺位', render: [
+                {prop: 'rank', label: '顺位',
+                    render: [
                         {myTarget: 7, mode: 'less', myClass: 'bbb'},
 						{myTarget: 11, myClass: 'aaa'}
                     ]
                 },
                 {prop: 'age', label: '年龄', sort: 'custom'},
-                {label: '操作', slot: [
+                {label: '操作', center: true,
+                    slot: [
                         {type: 'detail', name: '查看'},
-                        {type: 'delete', name: '删除'},
-                    ], center: true,
-                },
+                        {type: 'delete', name: '删除'}
+                    ]
+                }
             ],
             tableData: [	// 表格数据
                 {year: '2003', name: 'LeBron James', rank: 1, age: 34},
