@@ -64,7 +64,7 @@ data(){
                     ]
                 }
             ],
-            tableData: [	                                                // 表格数据
+            tableData: [	                  // 表格数据
                 {year: '2003', name: 'LeBron James', rank: 1, age: 34},
                 {year: '2010', name: 'Kyrie Irving', rank: 2, age: 36},
                 {year: '2003', name: 'Dwyane Wade', rank: 5, age: 26},
@@ -85,19 +85,19 @@ data(){
                 {year: '2003', name: 'Dwyane Wade', rank: 5, age: 26}
             ],
             page:{
-                cur: 1,		                                                // 当前页
-                size: 20,	                                                // 每页数量
-                total: 18	                                                // 总数
+                cur: 1,		                 // 当前页
+                size: 20,	                 // 每页数量
+                total: 18	                 // 总数
             },
-            feedback: '',	                                                // 'loading': 加载中, 'error': 加载失败, 'empty': 暂无数据
-            handle: (row, type) => {	                                    // 操作
+            feedback: '',	                 // 'loading': 加载中, 'error': 加载失败, 'empty': 暂无数据
+            handle: (row, type) => {	     // 操作
                 console.log(row.name, type)
             },
-            handlePage: val => {		                                    // 切换页码
+            handlePage: val => {		     // 切换页码
                 console.log(val);
                 this.tables.page.cur = val
             },
-            handleSort: (prop, order) => {	                                // 排序
+            handleSort: (prop, order) => {	 // 排序
                 console.log(prop, order)
             }
         }
